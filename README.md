@@ -58,41 +58,30 @@ Python으로 구현하는 **CLI 기반 계산기 프로그램**입니다.
 
 # 🌿 Git 협업 전략
 
-팀 브랜치명
+### 팀 브랜치명
 ```
 team-2
 ```
 
-팀 내부 기능별 branch명
+### 팀 내부 기능별 branch명
 
 ```
-feat-add
-feat-sub
-feat-mul
-feat-div
-feat-main
+태그명/기능#이슈번호
 ```
+예시 <br>
+`Feat/mul#3`
 
+---
 
-# 🚗 권장 Git Workflow
-
-권장되는 작업 흐름
-
-```
-1. 팀 branch 생성
-2. 기능 branch 생성
-3. 기능 구현
-4. commit
-5. GitHub push
-6. Pull Request 생성
-7. 팀 branch merge
-```
-
-Pull Request 기반 협업을 권장합니다.
-
-
+### issue 양식
+제목 <br>
+`[태그] 내용 - 이름` <br>
+내용 <br>
+`체크란 형태로 작성`
 
 # 📌 Commit 규칙
+
+`[태그명] 내용` 으로 작성
 
 | 태그 | 제목 |
 |------|------|
@@ -103,7 +92,6 @@ Pull Request 기반 협업을 권장합니다.
 | Refactor | 코드 리팩토링 |
 | Test | 테스트 (테스트 코드 추가, 수정, 삭제, 비즈니스 로직에 변경이 없는 경우) |
 | Chore | 위에 걸리지 않는 기타 변경사항 (빌드 스크립트 수정, assets image, 패키지 매니저 등) |
-| Design | CSS 등 사용자 UI 디자인 변경 |
 | Comment | 필요한 주석 추가 및 변경 |
 | Init | 프로젝트 초기 생성 |
 | Rename | 파일 혹은 폴더명 수정하거나 옮기는 경우 |
@@ -111,9 +99,9 @@ Pull Request 기반 협업을 권장합니다.
 
 예시
 ```
-Feat: 덧셈 기능 구현 완료
-Feat: 뻴셈 기능 구현 완료
-Fix: 나눗셈 시 결과가 반올림되지 않는 문제 해결
+[Feat] 덧셈 기능 구현 완료
+[Feat] 뻴셈 기능 구현 완료
+[Fix] 나눗셈 시 결과가 반올림되지 않는 문제 해결
 ```
 
 ---
